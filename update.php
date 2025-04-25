@@ -19,21 +19,21 @@ if(!@$conf['create'] === false)
 
 fetch($conf + array(
 	'table' => 'minute_replicate',
-	'base' => 'https://planet.osm.org/replication/minute/',
+	'base' => $conf['url_replication'] . '/minute/',
 	'firstSeq' => 1,
 ));
 
 
 fetch($conf + array(
 	'table' => 'hour_replicate',
-	'base' => 'https://planet.osm.org/replication/hour/',
+	'base' => $conf['url_replication'] . '/hour/',
 	'firstSeq' => 1,
 ));
 
 
 fetch($conf + array(
 	'table' => 'day_replicate',
-	'base' => 'https://planet.osm.org/replication/day/',
+	'base' => $conf['url_replication'] . '/day/',
 	'firstSeq' => 1,
 ));
 

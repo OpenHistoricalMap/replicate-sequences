@@ -84,18 +84,18 @@ switch(@$_GET['stream'])
 {
 	case 'hour':
 		$conf['table'] = 'hour_replicate';
-		$conf['base'] = 'http://planet.openstreetmap.org/replication/hour/';
+		$conf['base'] = $conf['url_replication'] . '/hour/';
 		break;
 	
 	case 'day':
 		$conf['table'] = 'day_replicate';
-		$conf['base'] = 'http://planet.openstreetmap.org/replication/day/';
+		$conf['base'] = $conf['url_replication'] . '/day/';
 		break;
 	
 	default:
 	case 'minute':
 		$conf['table'] = 'minute_replicate';
-		$conf['base'] = 'http://planet.openstreetmap.org/replication/minute/';
+		$conf['base'] = $conf['url_replication'] . '/minute/';
 		break;
 }
 
